@@ -1,0 +1,10 @@
+<h1>Result</h1>
+<% if @guess_desc[:included] == false %>
+<p>Sorry but <%= @word %> can't be Build with <%= @letters %></p>
+
+<% elsif @guess_desc[:english] == false%>
+<p>Sorry but <%= @word %> cis not an English word</p>
+
+<% else %>
+<p>Congrats you found the word <%= @word %></p>
+<% end %>
